@@ -1,18 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #2193b0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-s {
+    height: 100%;
+}
+
+.container__section {
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Stick to the top */
+    position: sticky;
+    top: 0;
+}
+
+.avatar {
+
+    /* Center the content */
+    display: inline-block;
+    vertical-align: middle;
+
+    /* Used to position the content */
+    position: relative;
+
+    /* Colors */
+    background-image: url("../img/avatar.png");
+    background-position: center;
+    background-size: 110%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #f00;
+
+    /* Rounded border */
+    border-radius: 50%;
+    height: 288px;
+    width: 288px;
+}
+
+/*
+.avatar__letters {
+    left: 50%;
+    top: 93%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}*/
+
 .masonry-grid {
     /* It is split into 3 columns */
     column-count: 3;
 
+    background-color: white;
     /* The space between columns */
     column-gap: 1rem;
 
     /* Misc */
-    width: 100%;
+    width: 50%;
+
+    background-image: linear-gradient(to right, #FFEEEE 0%, #DDEFBB  51%, #FFEEEE  100%);
+
+}
+
+.masonry-grid {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 10px;
+  display: block;
 }
 
 .masonry-grid__item {
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
     /* Prevent a column from breaking into multiple columns */
     break-inside: avoid;
-
     /* Misc */
-    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+.masonry-grid:hover {
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
 }
