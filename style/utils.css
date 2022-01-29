@@ -1,4 +1,9 @@
 
+/* Width */
+.width-100 {
+  width: 100%;
+}
+
 /* Margin */
 
 .margin-top-20 {
@@ -9,6 +14,14 @@
   margin-top: 50px;
 }
 
+.margin-top-70 {
+  margin-top: 70px;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
 .margin-left-5rem {
   margin-left: 5rem;
 }
@@ -17,4 +30,25 @@
 
 .padding-15 {
   padding: 15px;
+}
+
+/* Font*/
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-17 {
+  font-size: 17px;
+}
+
+.font-size-15 {
+  font-size: 15px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-color-grey {
+  color: rgba(0, 0, 0, 0.5);
 }
