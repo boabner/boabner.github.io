@@ -29,6 +29,14 @@
   margin-left: 5rem;
 }
 
+.margin-left-3rem {
+  margin-left: 3rem;
+}
+
+.margin-left-2rem {
+  margin-left: 2rem;
+}
+
 /* Padding */
 
 .padding-15 {
@@ -63,4 +71,12 @@
 
 .font-color-grey {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.font-color-grey-b {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.font-color-grey-c {
+  color: rgba(0, 0, 0, 0.6);
 }
