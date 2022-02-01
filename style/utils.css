@@ -5,6 +5,9 @@
 }
 
 /* Margin */
+.margin-top-15 {
+  margin-top: 15px;
+}
 
 .margin-top-20 {
   margin-top: 20px;
@@ -33,6 +36,15 @@
 }
 
 /* Font*/
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-25 {
+  font-size: 25px;
+}
+
 .font-size-20 {
   font-size: 20px;
 }
