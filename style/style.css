@@ -6,11 +6,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
 #particles-js {
   position: absolute;
   width: 100%;
@@ -24,12 +19,13 @@ canvas {
 }
 
 .container__card {
+    top: 40%;
+    transform: translate(0, -50%);
     /* Background and border colors */
     position: absolute;
     border-radius: 25px;
     width: 60rem;
     height: 500px;
-    margin-top:38%;
     background-color: #fff;
 }
 
@@ -40,12 +36,10 @@ canvas {
     height: 500px;
     margin-top:4%;
     background-color: #fff;
-    visibility: 5rtfcv
 }
 
 
 .sub_container__card {
-    z-index: -1;
     /* Background and border colors */
     background-image: linear-gradient(100deg, #66a6ff 2%, #89f7fe 100%);
     width: 100%;
