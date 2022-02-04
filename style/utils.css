@@ -51,6 +51,10 @@
   padding: 15px;
 }
 
+.float-left {
+  float: left !important;
+}
+
 /* Font*/
 
 .font-size-30 {

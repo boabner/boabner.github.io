@@ -1,82 +1,467 @@
 <html>
-  <head>
-    <title>Abner Gonçalves Martins Fernandes</title>
+<head>
+  <title>Abner Gonçalves Martins Fernandes</title>
 
-    <!-- links -->
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <link rel="stylesheet" type="text/css" href="style/utils.css" />
+  <!-- links -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" type="text/css" href="style/utils.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
-  </head>
-  <body>
+</head>
+<body>
+  <form>
     <div id="particles-js"></div>
     <div class="container">
       <div class="container__card_certs">
         <div class="sub_container__card_certs">
           <div class="container">
             <div class="avatar__letters margin-top-50 font-size-20 font-bold font-color-grey-b">
-                Certificados
+              Certificados
             </div>
           </div>
           <div class="container margin-top-50">
             <div class="avatar__letters font-size-17 font-color-grey font-bold">
-                Abner Gonçalves - Engenheiro de Software Sênior
+              Abner Gonçalves - Engenheiro de Software Sênior
             </div>
           </div>
           <div class="container font-color-grey-c font-size-17">
             <div class="masonry-grid container margin-top-33">
-                <i class="material-icons">home</i>
-                <div class="masonry-grid__item">
-                  <a href="index.html">Home</a>
-                </div>
-                <i class="material-icons margin-left-3rem">next_week</i>
-                <div class="masonry-grid__item">
-                  <a href="https://www.linkedin.com/in/abnermartinsfer/" target="_blank">Linkedin</a>
-                </div>
-                <i class="material-icons margin-left-3rem ">folder_shared</i>
-                <div class="masonry-grid__item">
-                  <a href="https://github.com/boabner?tab=repositories" target="_blank">Projetos</a>
-                </div>
-                <i class="material-icons margin-left-3rem ">pages</i>
-                <div class="masonry-grid__item">
-                  <a href="certs.html">Certificados</a>
-                </div>
+              <i class="material-icons">home</i>
+              <div class="masonry-grid__item">
+                <a href="index.html">Home</a>
+              </div>
+              <i class="material-icons margin-left-3rem">next_week</i>
+              <div class="masonry-grid__item">
+                <a href="https://www.linkedin.com/in/abnermartinsfer/" target="_blank">Linkedin</a>
+              </div>
+              <i class="material-icons margin-left-3rem ">folder_shared</i>
+              <div class="masonry-grid__item">
+                <a href="https://github.com/boabner?tab=repositories" target="_blank">Projetos</a>
+              </div>
             </div>
           </div>
           <hr/>
-            <div class="table_certs">
-              <table>
-                  <thead>
-                      <tr>
-                          <th class="table_header">
-                              Java
-                          </th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="table_sub_header">Design Patterns</td>
-                    </tr>
-                    <tr>
-                      <td class="table_item_name">
-                        <a href="certs/DESIGN PATTERNS EM JAVA I: INTRODUÇÃO ÀS BOAS PRÁTICAS DE PROGRAMAÇÃO.pdf" target="_blank">
-                          DESIGN PATTERNS EM JAVA I: INTRODUÇÃO ÀS BOAS PRÁTICAS DE PROGRAMAÇÃO
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-              </table>
-            </div>
+          <div class="table_certs">
+            <table>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('events');takeVisibility('events-visibility','events-visibility_off');">
+                    <i class="material-icons float-left" id="events-visibility">visibility</i>
+                    <i class="material-icons float-left" id="events-visibility_off">visibility_off</i>
+                    Eventos
+                  </th>
+                </tr>
+                <tbody id="events">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/DevFest Brasil 2020.pdf" target="_blank">
+                        DevFest Brasil 2020
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/DevFest Brasil 2021.pdf" target="_blank">
+                        DevFest Brasil 2021
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('arquitecture');takeVisibility('arquitecture-visibility','arquitecture-visibility_off');">
+                    <i class="material-icons float-left" id="arquitecture-visibility">visibility</i>
+                    <i class="material-icons float-left" id="arquitecture-visibility_off">visibility_off</i>
+                    Arquitetura de Sistemas
+                  </th>
+                </tr>
+                <tbody id="arquitecture">
+                  <tr>
+                    <td class="table_sub_header">Geral</td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                        <i class="material-icons">add</i>
+                      <a href="certs/DevFest Brasil 2021" target="_blank">
+                        Fundamentos de Arquitetura de Sistemas
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('java');takeVisibility('java-visibility','java-visibility_off');">
+                    <i class="material-icons float-left" id="java-visibility">visibility</i>
+                    <i class="material-icons float-left" id="java-visibility_off">visibility_off</i>
+                    Java
+                  </th>
+                </tr>
+                <tbody id="java">
+                  <tr >
+                    <td class="table_sub_header">Design Patterns</td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/DESIGN PATTERNS EM JAVA I: INTRODUCAO AS BOAS PRATICAS DE PROGRAMACAO.pdf" target="_blank">
+                        DESIGN PATTERNS EM JAVA I: INTRODUCAO AS BOAS PRATICAS DE PROGRAMACAO
+                      </a>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/DESIGN PATTERNS EM JAVA II: AVANCANDO NAS BOAS PRATICAS DE PROGRAMACAO.pdf" target="_blank">
+                        DESIGN PATTERNS EM JAVA II: AVANCANDO NAS BOAS PRATICAS DE PROGRAMACAO
+                      </a>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td class="table_sub_header">SOLID</td>
+                  </tr>
+                  <tr >
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/SOLID COM JAVA PRINCIPIOS DA PROGRAMACAO ORIENTADA A OBJETOS.pdf" target="_blank">
+                        SOLID COM JAVA: PRINCIPIOS DA PROGRAMACAO ORIENTADA A OBJETOS
+                      </a>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td class="table_sub_header">Spring</td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Introducao ao framework SpringBoot.pdf" target="_blank">
+                        Introducao ao framework SpringBoot
+                      </a>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td class="table_sub_header">Jakarta EE - JPA</td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/EJB O PODER DA JAVA EE.pdf" target="_blank">
+                        EJB O PODER DA JAVA EE
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/JAVA E JPA PERSISTA SEUS OBJETOS COM A JPA2 E HIBERNATE.pdf" target="_blank">
+                        JAVA E JPA PERSISTA SEUS OBJETOS COM A JPA2 E HIBERNATE
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table_sub_header">Geral</td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Desenvolvimento avancado em Java.pdf" target="_blank">
+                        Desenvolvimento avancado em Java
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Implementando Collections e Streams com Java.pdf" target="_blank">
+                        Implementando Collections e Streams com Java
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('agile');takeVisibility('agile-visibility','agile-visibility_off');">
+                    <i class="material-icons float-left" id="agile-visibility">visibility</i>
+                    <i class="material-icons float-left" id="agile-visibility_off">visibility_off</i>
+                    Agile
+                  </th>
+                </tr>
+                <tbody id="agile">
+                  <tr>
+                    <td class="table_sub_header">SCRUM</td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Projetos ageis com SCRUM.pdf" target="_blank">
+                        Projetos ageis com SCRUM
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/SCRUM: AGILIDADE EM SEU PROJETO.pdf" target="_blank">
+                        SCRUM: AGILIDADE EM SEU PROJETO
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Kanban Essenciais.pdf" target="_blank">
+                        Kanban Essenciais
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Kanban - Metricas e praticas avancadas.pdf" target="_blank">
+                        Kanban - Metricas e praticas avancadas
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('python');takeVisibility('python-visibility','python-visibility_off');">
+                    <i class="material-icons float-left" id="python-visibility">visibility</i>
+                    <i class="material-icons float-left" id="python-visibility_off">visibility_off</i>
+                    Python
+                  </th>
+                </tr>
+                <tbody id="python">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">chevron_right</i>
+                      <a href="certs/Desenvolvimento Avancado Python com Flask e REST API.pdf" target="_blank">
+                        Desenvolvimento Avancado Python com Flask e REST API
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">chevron_right</i>
+                      <a href="certs/Python 3.pdf" target="_blank">
+                        Python 3
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('javascript');takeVisibility('javascript-visibility','javascript-visibility_off');">
+                    <i class="material-icons float-left" id="javascript-visibility">visibility</i>
+                    <i class="material-icons float-left" id="javascript-visibility_off">visibility_off</i>
+                    Javascript
+                  </th>
+                </tr>
+                <tbody id="javascript">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Programacao para internet com JavaScript.pdf" target="_blank">
+                        Programacao para internet com JavaScript
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Introducao a biblioteca JQuery.pdf" target="_blank">
+                        Introducao a biblioteca JQuery
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('react');takeVisibility('react-visibility','react-visibility_off');">
+                    <i class="material-icons float-left" id="react-visibility">visibility</i>
+                    <i class="material-icons float-left" id="react-visibility_off">visibility_off</i>
+                    React
+                  </th>
+                </tr>
+                <tbody id="react">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">chevron_right</i>
+                      <a href="certs/REACT: ENTENDENDO COMO A BIBLIOTECA FUNCIONA.pdf" target="_blank">
+                        REACT: ENTENDENDO COMO A BIBLIOTECA FUNCIONA
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('node');takeVisibility('node-visibility','node-visibility_off');">
+                    <i class="material-icons float-left" id="node-visibility">visibility</i>
+                    <i class="material-icons float-left" id="node-visibility_off">visibility_off</i>
+                    Node.js
+                  </th>
+                </tr>
+                <tbody id="node">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">chevron_right</i>
+                      <a href="certs/Introducao ao Node.JS com Express.pdf" target="_blank">
+                        Introducao ao Node.JS com Express
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('git');takeVisibility('git-visibility','git-visibility_off');">
+                    <i class="material-icons float-left" id="git-visibility">visibility</i>
+                    <i class="material-icons float-left" id="git-visibility_off">visibility_off</i>
+                    GIT
+                  </th>
+                </tr>
+                <tbody id="git">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">chevron_right</i>
+                      <a href="certs/Introducao ao Git e Controle de Versoes.pdf" target="_blank">
+                        Introducao ao Git e Controle de Versoes
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('css');takeVisibility('css-visibility','css-visibility_off');">
+                    <i class="material-icons float-left" id="css-visibility">visibility</i>
+                    <i class="material-icons float-left" id="css-visibility_off">visibility_off</i>
+                    CSS
+                  </th>
+                </tr>
+                <tbody id="css">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Inovando com CSS.pdf" target="_blank">
+                        Inovando com CSS
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('bd');takeVisibility('bd-visibility','bd-visibility_off');">
+                    <i class="material-icons float-left" id="bd-visibility">visibility</i>
+                    <i class="material-icons float-left" id="bd-visibility_off">visibility_off</i>
+                    Banco de Dados
+                  </th>
+                </tr>
+                <tbody id="bd">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Conceitos e melhores praticascom bancos de dados PostgreSQL.pdf" target="_blank">
+                        Conceitos e melhores praticascom bancos de dados PostgreSQL
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('devops');takeVisibility('devops-visibility','devops-visibility_off');">
+                    <i class="material-icons float-left" id="devops-visibility">visibility</i>
+                    <i class="material-icons float-left" id="devops-visibility_off">visibility_off</i>
+                    DevOps
+                  </th>
+                </tr>
+                <tbody id="devops">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/DevOps Essentials Professional Certificate.pdf" target="_blank">
+                        DevOps Essentials Professional Certificate
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+              <thead>
+                <tr>
+                  <th class="table_header" onclick="hideElement('outros');takeVisibility('outros-visibility','outros-visibility_off');">
+                    <i class="material-icons float-left" id="outros-visibility">visibility</i>
+                    <i class="material-icons float-left" id="outros-visibility_off">visibility_off</i>
+                    Outros
+                  </th>
+                </tr>
+                <tbody id="outros">
+                  <!--tr>
+                    <td class="table_sub_header">Kanban</td>
+                  </tr-->
+                  <tr>
+                    <td class="table_item_name">
+                      <i class="material-icons">add</i>
+                      <a href="certs/Logica de Programacao Essencial.pdf" target="_blank">
+                        Logica de Programacao Essencial
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </thead>
+            </table>
           </div>
+        </div>
       </div>
     </div>
     <script src='https://cldup.com/S6Ptkwu_qA.js'></script>
     <script  src="js/bg.js"></script>
-  </body>
+    <script  src="js/functions.js"></script>
+  </form>
+</body>
 </html>
