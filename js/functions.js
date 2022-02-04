@@ -1,5 +1,5 @@
 window.onload = function(){
-  const elements = ['java','agile','bd','events','devops','css','javascript','arquitecture','git','outros','node','python','react'];
+  const elements = ['java','agile','bd','events','devops','front','arquitecture','git','outros','node','python','soft'];
 
   elements.forEach((item, i) => {
     document.getElementById(item).style.display = 'none';
