@@ -1,9 +1,11 @@
 window.onload = function(){
-  const elements = ['java','agile','bd','events','devops','front','arquitecture','git','outros','node','python','soft'];
+  const elements = ['java','agile','bd','events','devops','front','arquitecture','git','outros','node','python','soft','experience','formacao'];
 
   elements.forEach((item, i) => {
-    document.getElementById(item).style.display = 'none';
-    document.getElementById(item+'-visibility').style.display = 'none';
+    if (document.getElementById(item) != null) {
+      document.getElementById(item).style.display = 'none';
+      document.getElementById(item+'-visibility').style.display = 'none';
+    }
   });
 
 
